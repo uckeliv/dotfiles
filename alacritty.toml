@@ -1,0 +1,35 @@
+[general]
+live_config_reload = true
+import = [
+    "~/.config/alacritty/themes/themes/tokyonight_day.toml"
+]
+
+[terminal]
+shell = { program = "tmux",  args = [ "new-session", "-A", "-s", "main"] } 
+
+[keyboard]
+
+[[keyboard.bindings]]
+key = "W"
+mods = "Control | Shift"
+action = "Quit"
+
+[window]
+opacity = 1
+padding = { x = 12, y = 10 }
+dynamic_padding = true
+decorations = "None"
+dynamic_title = true
+
+
+[font]
+size = 12.0
+
+[font.normal]
+family = "Maple Mono NF CN" 
+
+[font.offset]
+y = 6
+
+[font.glyph_offset]
+y = 3
